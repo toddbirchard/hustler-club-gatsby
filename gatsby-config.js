@@ -3,6 +3,7 @@ module.exports = {
     title: `Hustlers Club`,
     description: `New York's Finest Gentleman's Club. A Broiest™ production.`,
     author: `@gatsbyjs`,
+    image: `${__dirname}/static/img/share.jpg`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
