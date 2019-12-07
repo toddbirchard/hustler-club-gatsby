@@ -9,7 +9,6 @@
   height: fit-content;
   z-index: 10;
   max-height: 285px;
-
   @media(max-width: 800px) {
     max-height: 165px;
   }
@@ -31,6 +30,7 @@ h1 {
   font-size: 10em;
   text-transform: uppercase;
   font-family: 'geomanistblack';
+  text-shadow: #FFF 0px 0px 5px, rgba(151, 45, 255, 0.3) 0px 0px 20px, rgba(255, 45, 149, .3) 0px 0px 60px, rgba(255, 45, 149, .3) 0px 0px 40px;
   @media(max-width: 800px) {
     font-size: 4.4em;
   }
@@ -42,6 +42,7 @@ h2 {
   font-family: 'geomanistblack';
   text-transform: uppercase;
   margin-bottom: 10px;
+  text-shadow: rgba(151, 45, 255, 0.3) 0px 0px 20px, rgba(255, 45, 149, .3) 0px 0px 60px, rgba(255, 45, 149, .3) 0px 0px 40px;
   @media(max-width: 800px) {
     font-size: 1.12em;
   }
@@ -52,6 +53,7 @@ h3 {
   font-size: 1.5em;
   font-family: 'geomanistlight';
   margin-top: 50px;
+  text-shadow: 2px 2px 0 rgba(25, 40, 106, .3), 2px -2px 0 rgba(25, 40, 106, .3), -2px 2px 0 rgba(25, 40, 106, .3), -2px -2px 0 rgba(25, 40, 106, .3), 2px 0px 0 rgba(25, 40, 106, .3), 0px 2px 0 rgba(25, 40, 106, .3), -2px 0px 0 rgba(25, 40, 106, .3), 0px -2px 0 rgba(25, 40, 106, .3);
   @media(max-width: 800px) {
     font-size: 1em;
   }
@@ -61,11 +63,9 @@ video {
   position: fixed;
   right: 0;
   bottom: 0;
-  left: 0;
-  top: 0;
   min-width: 100%;
   min-height: 100%;
-  margin: auto;
+  transform: translateX(calc((100% - 100vw) / 2));
   @media(max-width: 600px) {
     margin: auto;
     height: 100% !important;
@@ -75,12 +75,8 @@ video {
 }
 
 .video-container {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
+  height: 100%;
   z-index: 0;
-  @media(max-width: 600px) {
-    max-height: 100% !important;
-  }
+  width: auto;
+  overflow: hidden;
 }
